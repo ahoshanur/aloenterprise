@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>আলো এন্টারপ্রাইজ</title>
+  <title>আলো এন্টারপ্রাইজ | এ.জে.আর পার্সেল সার্ভিস</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
@@ -11,15 +11,17 @@
     body {
       font-family: "Noto Serif Bengali", serif;
       background: #f8f9fa;
-      margin: 0;
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+      margin: 0;
       text-align: center;
+      padding: 1rem;
     }
     .container {
-      padding: 1.5rem;
+      max-width: 300px;
+      width: 100%;
     }
     h1 {
       font-size: xx-large;
@@ -27,7 +29,7 @@
     }
     h2 {
       font-size: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       color: #555;
     }
     p.address {
@@ -37,10 +39,10 @@
     }
     p.note {
       font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
     }
     .button-group {
-      margin: 0.75rem;
+      margin-top: 1rem;
       display: flex;
       flex-direction: column;
       gap: 0.7rem;
@@ -48,7 +50,7 @@
     }
     .btn {
       font-family: "Noto Serif Bengali", serif;
-      width: 300px;
+      width: 100%;
       padding: 0.7rem 1.5rem;
       font-size: 1.1rem;
       border: none;
@@ -57,6 +59,7 @@
       display: inline-block;
       transition: background 0.3s;
       color: white;
+      box-sizing: border-box;
     }
     .btn.call {
       background: #000;
@@ -76,6 +79,10 @@
     .btn.branch:hover {
       background: #0056b3;
     }
+    .hidden-heading {
+      color: #f8f9fa;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -92,6 +99,8 @@
       <a href="https://maps.app.goo.gl/VhMeAQGAW9iTMugVA" class="btn map" target="_blank">🗺️ Google Map এ ঠিকানা দেখুন</a>
       <a href="https://aloent.vercel.app/parcel-branch.html" class="btn branch" target="_self">📍 এ.জে.আর এর সকল পার্সেল শাখা</a>
     </div>
+
+    <h1 class="hidden-heading">আলো এন্টারপ্রাইজ</h1>
   </div>
 
 </body>
